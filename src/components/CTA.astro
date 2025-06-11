@@ -1,0 +1,80 @@
+<section class="relative z-10 mt-12 overflow-hidden bg-sky-950 px-8 py-20">
+	<div class="container mx-auto max-w-6xl">
+		<div class="-mx-4 flex flex-wrap items-center">
+			<div class="w-full px-4 lg:w-1/2">
+				<div class="text-center lg:text-left">
+					<div class="mb-10 lg:mb-0">
+						<h1
+							class="mt-0 mb-4 text-4xl leading-tight font-bold text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight"
+						>
+							Ready to Get Started?
+						</h1>
+						<p
+							class="w-full text-lg leading-relaxed font-medium text-slate-300 sm:text-xl sm:leading-relaxed"
+						>
+							Join thousands of users who have already transformed their workflow. Start your
+							journey today and experience the difference.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="w-full px-4 lg:w-1/2">
+				<div class="text-center lg:text-right">
+					<ul class="space-y-4 lg:flex lg:justify-end lg:space-y-0 lg:space-x-4">
+						<a
+							class="btn mx-auto inline-flex transform items-center justify-center rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-slate-900 hover:shadow-xl lg:mx-0"
+							href="/signup"
+						>
+							Get Started Free
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{/* Decorative Elements */}
+	<div class="absolute top-0 right-0 -z-10 opacity-10">
+		<svg
+			width="400"
+			height="300"
+			viewBox="0 0 400 300"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path d="M200 -50L0 300L900 300L900 -50L200 -50Z" fill="url(#gradient1)"></path>
+			<defs>
+				<linearGradient
+					id="gradient1"
+					x1="100"
+					y1="125"
+					x2="300"
+					y2="125"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop offset="0.5" stop-color="white"></stop>
+					<stop offset="1" stop-color="white" stopOpacity="0"></stop>
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
+
+	<div class="absolute bottom-4 left-4 -z-10 opacity-30">
+		<div class="grid grid-cols-4 gap-3">
+			{
+				Array.from({ length: 16 }).map((_, i) => (
+					<div
+						class="h-2 w-2 animate-pulse rounded-full bg-white"
+						style={{ animationDelay: `${i * 0.1}s` }}
+					/>
+				))
+			}
+		</div>
+	</div>
+
+	<div class="absolute top-8 right-8 -z-10 opacity-20">
+		<div class="h-32 w-32 rounded-full border border-white"></div>
+		<div class="absolute top-4 left-4 h-24 w-24 rounded-full border border-white"></div>
+		<div class="absolute top-8 left-8 h-16 w-16 rounded-full border border-white"></div>
+	</div>
+</section>

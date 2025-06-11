@@ -1,0 +1,262 @@
+<link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+
+<script type="module">
+	import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+
+	const keenSlider = new KeenSlider(
+		"#keen-slider",
+		{
+			loop: true,
+			slides: {
+				origin: "center",
+				perView: 1.25,
+				spacing: 16,
+			},
+			breakpoints: {
+				"(min-width: 1024px)": {
+					slides: {
+						origin: "auto",
+						perView: 3,
+						spacing: 32,
+					},
+				},
+			},
+		},
+		[],
+	);
+
+	const keenSliderPrevious = document.getElementById("keen-slider-previous");
+	const keenSliderNext = document.getElementById("keen-slider-next");
+
+	keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+	keenSliderNext.addEventListener("click", () => keenSlider.next());
+</script>
+
+<section class="relative py-20 lg:py-32">
+	<div class="floating-shapes">
+		<div class="floating-shape"></div>
+		<div class="floating-shape"></div>
+		<div class="floating-shape"></div>
+	</div>
+
+	<div class="container mx-auto max-w-7xl px-4">
+		<!-- Header Section -->
+		<div class="mb-16 text-center">
+			<div
+				class="mb-6 inline-flex items-center rounded-full border border-gray-200 bg-white px-6 py-2 shadow-lg"
+			>
+				<div class="mr-3 h-2 w-2 animate-pulse rounded-full bg-sky-500"></div>
+				<span class="text-sm font-medium tracking-wider text-gray-700 uppercase">
+					Testimonials</span
+				>
+			</div>
+			<h1 class="mb-6 text-5xl leading-tight font-bold text-gray-900 lg:text-7xl">
+				Real Stories from
+				<span class="block bg-gradient-to-r from-sky-600 to-sky-600 bg-clip-text text-transparent">
+					Happy Clients
+				</span>
+			</h1>
+			<div class="w-full">
+				<p class="!mx-auto max-w-2xl text-center text-xl leading-relaxed text-gray-600">
+					See how we've transformed businesses and exceeded expectations across different industries
+				</p>
+			</div>
+		</div>
+
+		<!-- Navigation -->
+		<div class="mb-12 flex justify-center gap-4">
+			<button id="keen-slider-previous" class="nav-button" aria-label="Previous testimonial">
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path d="m15 18-6-6 6-6"></path>
+				</svg>
+			</button>
+
+			<button id="keen-slider-next" class="nav-button" aria-label="Next testimonial">
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path d="m9 18 6-6-6-6"></path>
+				</svg>
+			</button>
+		</div>
+
+		<!-- Testimonials Slider -->
+		<div id="keen-slider" class="keen-slider">
+			<!-- Testimonial 1 -->
+			<div class="keen-slider__slide">
+				<div class="testimonial-card relative h-full rounded-3xl p-4 lg:p-12">
+					<div class="relative z-10">
+						<div class="rating-container">
+							<div class="flex">
+								<span class="text-3xl">⭐⭐⭐⭐⭐</span>
+							</div>
+						</div>
+
+						<h3
+							class="mt-4 mb-6 min-h-[3lh] text-2xl leading-tight font-bold text-gray-900 lg:text-3xl"
+						>
+							Game-changing partnership for our supply chain
+						</h3>
+
+						<p class="!m-0 !mb-8 text-lg leading-relaxed text-gray-700">
+							"The level of service and reliability we receive is absolutely incredible. They've
+							become an integral part of our operations, consistently delivering high-quality tech
+							solutions on time, every time. Our procurement process has never been smoother."
+						</p>
+
+						<div class="flex items-center">
+							<div class="relative">
+								<div
+									class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-xl font-bold text-white shadow-lg"
+								>
+									JM
+								</div>
+								<div
+									class="absolute -right-1 -bottom-1 h-6 w-6 rounded-full border-2 border-white bg-green-500"
+								>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-bold text-gray-900">James Mitchell</h4>
+								<p class="!p-0 text-gray-600">Head of Operations</p>
+								<p class="!p-0 text-sm font-medium text-indigo-600">TechCorp Industries</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonial 2 -->
+			<div class="keen-slider__slide">
+				<div class="testimonial-card relative h-full rounded-3xl p-4 lg:p-12">
+					<div class="relative z-10">
+						<div class="rating-container">
+							<div class="flex">
+								<span class="text-3xl">⭐⭐⭐⭐⭐</span>
+							</div>
+						</div>
+
+						<h3
+							class="mt-4 mb-6 min-h-[3lh] text-2xl leading-tight font-bold text-gray-900 lg:text-3xl"
+						>
+							Unmatched expertise in B2B electronics
+						</h3>
+
+						<p class="!m-0 !mb-8 text-lg leading-relaxed text-gray-700">
+							"Their extensive product catalog and seamless logistics coordination have
+							revolutionized how we approach technology procurement. The team's expertise and
+							dedication to customer success is evident in every interaction."
+						</p>
+
+						<div class="flex items-center">
+							<div class="relative">
+								<div
+									class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 text-xl font-bold text-white shadow-lg"
+								>
+									LC
+								</div>
+								<div
+									class="absolute -right-1 -bottom-1 h-6 w-6 rounded-full border-2 border-white bg-green-500"
+								>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-bold text-gray-900">Lucy Chang</h4>
+								<p class="!m-0 text-gray-600">Strategic Procurement Lead</p>
+								<p class="!m-0 text-sm font-medium text-purple-600">Global Dynamics Ltd</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonial 3 -->
+			<div class="keen-slider__slide">
+				<div class="testimonial-card relative h-full rounded-3xl p-4 lg:p-12">
+					<div class="relative z-10">
+						<div class="rating-container">
+							<div class="flex">
+								<span class="text-3xl">⭐⭐⭐⭐⭐</span>
+							</div>
+						</div>
+
+						<h3
+							class="mt-4 mb-6 min-h-[3lh] text-2xl leading-tight font-bold text-gray-900 lg:text-3xl"
+						>
+							Exceeds expectations in every delivery
+						</h3>
+
+						<p class="!m-0 !mb-8 text-lg leading-relaxed text-gray-700">
+							"From the first order to our ongoing partnership, they've consistently delivered
+							premium quality products with impeccable timing. Their customer service sets the gold
+							standard in the industry. Truly exceptional experience."
+						</p>
+
+						<div class="flex items-center">
+							<div class="relative">
+								<div
+									class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-xl font-bold text-white shadow-lg"
+								>
+									TR
+								</div>
+								<div
+									class="absolute -right-1 -bottom-1 h-6 w-6 rounded-full border-2 border-white bg-green-500"
+								>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-bold text-gray-900">Tom Rodriguez</h4>
+								<p class="!m-0 text-gray-600">Technology Manager</p>
+								<p class="!m-0 text-sm font-medium text-emerald-600">Innovation Systems</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom CTA -->
+		<div class="mt-16 text-center">
+			<div
+				class="inline-flex items-center rounded-full border border-gray-200 bg-white px-8 py-4 shadow-lg"
+			>
+				<div class="mr-4 flex -space-x-2">
+					<div
+						class="h-8 w-8 rounded-full border-2 border-white bg-gradient-to-br from-blue-500 to-indigo-600"
+					>
+					</div>
+					<div
+						class="h-8 w-8 rounded-full border-2 border-white bg-gradient-to-br from-purple-500 to-pink-600"
+					>
+					</div>
+					<div
+						class="h-8 w-8 rounded-full border-2 border-white bg-gradient-to-br from-emerald-500 to-teal-600"
+					>
+					</div>
+					<div
+						class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gray-300 text-xs font-bold text-gray-600"
+					>
+						+
+					</div>
+				</div>
+				<span class="font-medium text-gray-700">Join 500+ satisfied customers</span>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,94 @@
+---
+import { Image } from "astro:assets";
+import image1 from "../assets/images/Globalization-cuate.svg";
+import ebay from "../icons/brands/ebay.svg";
+import amazon from "../icons/brands/amazon.svg";
+import etsy from "../icons/brands/etsy.svg";
+---
+
+<div class="relative mx-auto max-w-7xl bg-whitepb-20 pt-20">
+	<div class="relative m-auto px-6 md:px-12 lg:px-6 xl:container">
+		<h1
+			class="text-center text-4xl font-black text-sky-900 sm:mx-auto sm:w-10/12 sm:text-5xl md:w-2/3 md:text-6xl lg:w-auto lg:text-left xl:text-7xl"
+		>
+			Cutting-Edge Tech <br class="hidden lg:block" />
+			<span class="relative bg-gradient-to-r from-sky-800 to-sky-500 bg-clip-text text-transparent"
+				>Wholesale & Retail.</span
+			>
+		</h1>
+		<div class="lg:flex">
+			<div
+				class="relative mt-8 space-y-8 text-center sm:mx-auto sm:w-10/12 md:mt-16 md:w-2/3 lg:mr-auto lg:ml-0 lg:w-7/12 lg:text-left"
+			>
+				<p class="text-gray-700 md:text-lg lg:w-11/12">
+					In the fast-evolving world of consumer electronics, <span class="font-semibold"
+						>RS TRADES LEEDS LTD,</span
+					> established in 2024, has quickly become a cornerstone for wholesale and retail distribution.
+				</p>
+				<span class="block font-semibold text-sky-900 md:text-lg"
+					>We pride ourselves on offering a diverse range of high-quality electronic products</span
+				>
+				<div
+					class="grid grid-cols-3 space-x-4 md:flex md:justify-center md:space-x-6 lg:justify-start"
+				>
+					<div class="rounded-full border border-gray-200 p-4 px-6">
+						<div class="flex justify-center space-x-4">
+							<Image
+								class="h-10 w-auto"
+								src={ebay}
+								alt="ebay logo"
+								loading="lazy"
+								width="128"
+								height="128"
+							/>
+						</div>
+					</div>
+					<div class="rounded-full border border-gray-200 p-4 px-6">
+						<div class="flex justify-center space-x-4">
+							<Image
+								class="h-10 w-auto"
+								src={amazon}
+								alt="amazon logo"
+								loading="lazy"
+								width="128"
+								height="128"
+							/>
+						</div>
+					</div>
+					<div class="rounded-full border border-gray-200 p-4 px-6">
+						<div class="flex justify-center space-x-4">
+							<Image
+								class="h-10 w-auto"
+								src={etsy}
+								alt="etsy logo"
+								loading="lazy"
+								width="128"
+								height="128"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					🔥🌟
+					<span>Tons of other retailers see below :</span>
+				</div>
+			</div>
+			<div class="-right-10 mt-12 md:mt-0 lg:absolute lg:w-7/12">
+				<div class="relative w-full">
+					<div
+						aria-hidden="true"
+						class="absolute inset-0 m-auto h-full w-full scale-75 rotate-45 rounded-full bg-gradient-to-r from-sky-500 to-sky-300 blur-3xl md:h-96 md:w-96 md:scale-120"
+					>
+					</div>
+					<Image
+						src={image1}
+						class="relative w-4/5 pl-12"
+						alt="wath illustration"
+						loading="eager"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
