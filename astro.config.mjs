@@ -3,6 +3,9 @@ import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 
 import tailwindcss from '@tailwindcss/vite'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,4 +16,5 @@ export default defineConfig({
 	},
 	site: "https://rstradesleedsltd.com",
 	integrations: [icon(), sitemap()],
-});
+});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
