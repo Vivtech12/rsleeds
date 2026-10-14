@@ -16,4 +16,4 @@ export default defineConfig({
 	},
 	site: "https://rstradesleedsltd.com",
 	integrations: [icon(), sitemap()],
-});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+});
